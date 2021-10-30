@@ -8,8 +8,8 @@ echo '|__/     |__/ \_______/   \___/   \___/           |__/ \_______/|__/      
 echo '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 '
 
-echo "Buona giornata Matt"
-curl -s wttr.in | head -n7
+#echo "Buona giornata Matt"
+#curl -s wttr.in | head -n7
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -135,8 +135,8 @@ alias top="bpytop"
 
 # Alias for pacman and yay
 
-alias install="sudo apt-get install"
-alias upgrade="sudo apt-get update & sudo apt-get upgrade"
+alias install="sudo apt-fast install"
+alias upgrade="sudo apt-get upgrade"
 alias update="sudo apt-get update"
 alias remove="sudo apt-get purge"
 #alias yaysua="yay -Sua --noconfirm"              # update only AUR pkgs
@@ -165,6 +165,8 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias lynx='lynx -cfg=~/.lynx/lynx.cfg -lss=~/.lynx/lynx.lss -vikeys'
 alias vifm='./.config/vifm/scripts/vifmrun'
+#start emacs in the terminal
+alias enw='emacs -nw'
 
 ## get top process eating memory
 alias psmem='ps auxf | sort -nr -k 4'
@@ -218,6 +220,9 @@ alias tb="nc termbin.com 9999"
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 #Stands for When Did I Last ?
 alias wdil='history | grep'
+#kathara alias 
+alias lstart='kathara lstart'
+alias lclean='kathara lclean'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
